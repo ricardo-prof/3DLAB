@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Percursos de aprendizagem de Desenho Assistido por Computador — 10.º, 11.º e 12.º anos.">
+<meta name="theme-color" content="#f4f5f2">
+<title>Aprender — Percursos DAC | 3D Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+.learn-hero{background:#252d28;color:#f7f8f4;padding:70px 8% 62px;position:relative;overflow:hidden}
+.learn-hero:after{content:"DAC";position:absolute;right:6%;top:-55px;font-size:clamp(150px,23vw,300px);font-weight:800;letter-spacing:-.11em;color:#ffffff08;pointer-events:none}
+.learn-crumb{font:9px var(--mono);letter-spacing:.13em;color:#aeb8ae;margin-bottom:25px}.learn-crumb a{color:#f17b4d}
+.learn-hero h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-.075em;margin:0 0 20px;max-width:900px}.learn-hero h1 span{color:#f17b4d}
+.learn-lead{font-size:14px;line-height:1.9;color:#c5cec5;max-width:700px}
+.learn-stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:35px}.learn-stats div{border-left:2px solid #f17b4d;padding-left:12px}.learn-stats b{font:14px var(--mono);display:block}.learn-stats small{font:8px var(--mono);letter-spacing:.1em;color:#aeb8ae;display:block;margin-top:5px}
+.year-nav{display:flex;gap:9px;flex-wrap:wrap;padding:22px 8%;background:#e8ebe5;border-bottom:1px solid #d9ddd6}.year-nav a{padding:10px 15px;border:1px solid #cbd2c9;font:9px var(--mono);letter-spacing:.08em}.year-nav a:hover{background:#252d28;color:white;border-color:#252d28}
+.curriculum{padding:75px 8%;scroll-margin-top:20px}.curriculum:nth-of-type(even){background:#fbfcf9}
+.year-heading{display:grid;grid-template-columns:1fr minmax(220px,340px);gap:35px;align-items:end;margin-bottom:36px}.year-kicker{font:9px var(--mono);letter-spacing:.13em;color:#f06a3b;margin-bottom:12px}.year-heading h2{font-size:clamp(36px,5vw,58px);letter-spacing:-.075em;line-height:1;margin:0}.year-heading h2 span{color:#9ba49b}.year-summary{font-size:12px;line-height:1.8;color:#69736b;margin:0}
+.year-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.year-meta span{font:9px var(--mono);padding:8px 10px;background:#e9ede7;color:#4e594f}
+.module-list{display:grid;gap:12px}
+.curr-module{background:#fff;border:1px solid #d9ddd6;display:grid;grid-template-columns:90px minmax(0,1fr) 150px;gap:20px;padding:24px;align-items:start}
+.curr-module:hover{border-color:#f06a3b}
+.curr-number{font:11px var(--mono);color:#f06a3b;letter-spacing:.08em}
+.curr-title{font-size:20px;font-weight:800;letter-spacing:-.045em;margin:0 0 7px}
+.curr-focus{font-size:11px;line-height:1.7;color:#69736b;margin:0 0 12px}
+.curr-topics{display:flex;gap:6px;flex-wrap:wrap}.curr-topics span{font-size:9px;padding:6px 8px;background:#eef0eb;color:#505a52}
+.curr-time{text-align:right;border-left:1px solid #d9ddd6;padding-left:15px}.curr-time b{display:block;font:13px var(--mono)}.curr-time small{font:8px var(--mono);color:#778178;display:block;margin-top:5px;line-height:1.6}
+.learn-note{padding:20px 22px;border-left:3px solid #f06a3b;background:#e9ede7;font-size:11px;line-height:1.8;color:#59645b;margin-top:24px}
+.assessment{padding:68px 8%;background:#252d28;color:#f7f8f4}.assessment h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.07em;margin:12px 0}.assessment>p{font-size:12px;line-height:1.8;color:#c1cac1;max-width:720px}
+.assessment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}.assessment-card{padding:19px;background:#303a33;border-top:2px solid #f06a3b}.assessment-card b{font:22px var(--mono);display:block}.assessment-card span{display:block;font-size:10px;line-height:1.6;color:#c2cbc2;margin-top:8px}
+.learn-footer{padding:25px 8%;background:#e8ebe5;display:flex;align-items:center;justify-content:space-between;gap:20px}.learn-footer p{font-size:11px;line-height:1.7;color:#647067;margin:0;max-width:620px}
+@media(max-width:800px){.curriculum{padding:60px 6%}.learn-hero{padding:58px 6%}.year-heading{grid-template-columns:1fr}.curr-module{grid-template-columns:60px 1fr;gap:12px}.curr-time{grid-column:2;text-align:left;border-left:0;border-top:1px solid #d9ddd6;padding:10px 0 0;display:flex;gap:15px;align-items:center}.assessment{padding:58px 6%}.assessment-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.curr-module{padding:18px;grid-template-columns:1fr}.curr-time{grid-column:1}.assessment-grid{grid-template-columns:1fr 1fr}.learn-footer{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="announcement"><span class="status-dot"></span> 3D LAB · PERCURSOS DE APRENDIZAGEM <span class="announcement-right">DAC / 2026—2027</span></div>
+<header class="site-header">
+<a class="brand" href="../index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-name">3D<span>LAB</span><small>LABORATÓRIO DIGITAL 3D</small></span></a>
+<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<nav class="main-nav" aria-label="Navegação principal"><a href="../index.html">Início</a><a class="active" href="aprender.html">Aprender</a><a href="biblioteca.html">Recursos</a><a href="desafios.html">Projetos</a></nav>
+<a class="header-cta" href="../index.html">Voltar ao início <span>↗</span></a>
+</header>
+<main>
+<section class="learn-hero">
+<div class="learn-crumb"><a href="../index.html">3D LAB</a> / APRENDER</div>
+<h1>Aprender a pensar,<br><span>desenhar e construir.</span></h1>
+<p class="learn-lead">Os percursos de Desenho Assistido por Computador estão organizados de acordo com as planificações anuais de 2026/2027. Cada ano desenvolve competências próprias, numa progressão que vai da representação técnica à modelação, visualização e prototipagem.</p>
+<div class="learn-stats"><div><b>3 ANOS</b><small>ENSINO SECUNDÁRIO</small></div><div><b>9 MÓDULOS</b><small>PERCURSOS CURRICULARES</small></div><div><b>264 H</b><small>CARGA HORÁRIA TOTAL INDICADA</small></div></div>
+</section>
+<nav class="year-nav" aria-label="Aceder aos percursos por ano"><a href="#ano10">10.º ANO ↓</a><a href="#ano11">11.º ANO ↓</a><a href="#ano12">12.º ANO ↓</a><a href="#avaliacao">AVALIAÇÃO ↓</a></nav>
+
+<section class="curriculum" id="ano10">
+<div class="year-heading"><div><div class="year-kicker">PERCURSO 01 / 10.º ANO</div><h2>Representação<br><span>e documentação.</span></h2><div class="year-meta"><span>4 MÓDULOS</span><span>108 HORAS</span><span>1.º—3.º PERÍODOS</span></div></div><p class="year-summary">Desenvolvimento das bases do desenho técnico, da leitura e representação de objetos, dos processos de representação bidimensional e da preparação de documentação e impressão.</p></div>
+<div class="module-list">
+<article class="curr-module" id="10-m1"><div class="curr-number">MÓDULO<br>01</div><div><h3 class="curr-title">Projeções Ortogonais / Axonometrias</h3><p class="curr-focus">Desenho técnico, normalização, projeção ortogonal, seleção e leitura de vistas, tipos e significado das linhas, perspetivas cavaleira, dimétrica e isométrica, construção de elipses e perspetiva explodida.</p><div class="curr-topics"><span>Desenho técnico</span><span>Vistas ortogonais</span><span>Axonometrias</span><span>Perspetiva explodida</span></div></div><div class="curr-time"><b>30 HORAS</b><small>1.º PERÍODO<br>40 TEMPOS</small></div></article>
+<article class="curr-module" id="10-m2"><div class="curr-number">MÓDULO<br>02</div><div><h3 class="curr-title">Cortes, Secções e Traçados Auxiliares</h3><p class="curr-focus">Interpretação e representação de cortes e secções, superfícies cortadas, elementos que não se cortam, cortes em perspetiva, vistas e cortes parciais, vistas auxiliares e métodos de rebatimento.</p><div class="curr-topics"><span>Cortes e secções</span><span>Vistas parciais</span><span>Vistas auxiliares</span><span>Rebatimento</span></div></div><div class="curr-time"><b>30 HORAS</b><small>1.º E 2.º PERÍODOS<br>40 TEMPOS</small></div></article>
+<article class="curr-module" id="10-m3"><div class="curr-number">MÓDULO<br>03</div><div><h3 class="curr-title">Representação Bidimensional</h3><p class="curr-focus">Enquadramento das ferramentas DAC, referência espacial e coordenadas cartesianas e polares, ambiente de trabalho, ferramentas básicas de desenho, edição e consulta, análise de objetos e organização por componentes, bibliotecas e camadas.</p><div class="curr-topics"><span>CAD / CAM / CAID</span><span>Referência espacial</span><span>Desenho 2D</span><span>Layers e bibliotecas</span></div></div><div class="curr-time"><b>30 HORAS</b><small>2.º E 3.º PERÍODOS<br>40 TEMPOS</small></div></article>
+<article class="curr-module" id="10-m4"><div class="curr-number">MÓDULO<br>04</div><div><h3 class="curr-title">Documentação e Impressão</h3><p class="curr-focus">Cotagem, escalas, linhas de chamada e de cota, estilos e normas; documentação digital, textos, legendas, listagens e identificação de desenhos; dispositivos de saída, formatos de papel e formatos digitais.</p><div class="curr-topics"><span>Cotagem</span><span>Normas</span><span>Documentação</span><span>Impressão e exportação</span></div></div><div class="curr-time"><b>18 HORAS</b><small>3.º PERÍODO<br>24 TEMPOS</small></div></article>
+</div>
+<div class="learn-note"><b>Enfoque do 10.º ano:</b> aprender a ler, analisar, sintetizar e representar objetos simples, aplicando normas de desenho técnico e selecionando métodos de representação adequados.</div>
+</section>
+
+<section class="curriculum" id="ano11">
+<div class="year-heading"><div><div class="year-kicker">PERCURSO 02 / 11.º ANO</div><h2>Modelação 3D<br><span>e imagem virtual.</span></h2><div class="year-meta"><span>3 MÓDULOS</span><span>90 HORAS</span><span>1.º—3.º PERÍODOS</span></div></div><p class="year-summary">Progressão da modelação tridimensional de sólidos para superfícies avançadas e para o processamento gráfico, materiais, iluminação, enquadramento e renderização.</p></div>
+<div class="module-list">
+<article class="curr-module" id="11-m5"><div class="curr-number">MÓDULO<br>05</div><div><h3 class="curr-title">Modelação Tridimensional</h3><p class="curr-focus">Coordenadas cartesianas, cilíndricas e esféricas, planos auxiliares, sólidos e superfícies, primitivas geométricas, extrusão, revolução, lofting, edição de sólidos e operações booleanas. Extração de vistas, perspetivas, cortes, secções e informação dimensional a partir de modelos 3D.</p><div class="curr-topics"><span>Primitivas 3D</span><span>Extrude / Revolve / Loft</span><span>Operações booleanas</span><span>Vistas e secções</span></div></div><div class="curr-time"><b>33 HORAS</b><small>1.º PERÍODO<br>44 TEMPOS</small></div></article>
+<article class="curr-module" id="11-m6"><div class="curr-number">MÓDULO<br>06</div><div><h3 class="curr-title">Modelação 3D Avançada</h3><p class="curr-focus">Modelação de superfícies, importação e conversão de geometria, tipos de superfícies (mesh, patch, quad e NURBS), constituintes como vertex, edge, face, poly e control point, transformações, surfacing, morphing e modelação com NURBS.</p><div class="curr-topics"><span>Superfícies</span><span>Mesh / Patch / Quad</span><span>NURBS</span><span>Surfacing e morphing</span></div></div><div class="curr-time"><b>30 HORAS</b><small>1.º E 2.º PERÍODOS<br>40 TEMPOS</small></div></article>
+<article class="curr-module" id="11-m7"><div class="curr-number">MÓDULO<br>07</div><div><h3 class="curr-title">Processamento Gráfico / Imagem Virtual</h3><p class="curr-focus">Materiais, shaders e mapas, acabamentos, iluminação natural e artificial, iluminação de estúdio, câmaras e enquadramento, composição, iluminação global, motores de render e efeitos de pós-renderização.</p><div class="curr-topics"><span>Materiais e shaders</span><span>Iluminação</span><span>Câmara e composição</span><span>Render e pós-render</span></div></div><div class="curr-time"><b>27 HORAS</b><small>2.º E 3.º PERÍODOS<br>36 TEMPOS</small></div></article>
+</div>
+<div class="learn-note"><b>Enfoque do 11.º ano:</b> modelar sólidos e superfícies, editar geometrias, extrair informação gráfica e dimensional e produzir imagens virtuais com materiais, iluminação e enquadramento adequados.</div>
+</section>
+
+<section class="curriculum" id="ano12">
+<div class="year-heading"><div><div class="year-kicker">PERCURSO 03 / 12.º ANO</div><h2>Prototipagem<br><span>e ambientes virtuais.</span></h2><div class="year-meta"><span>2 MÓDULOS</span><span>66 HORAS</span><span>1.º—2.º PERÍODOS</span></div></div><p class="year-summary">Aplicação da modelação e da visualização ao desenvolvimento e avaliação de protótipos, explorando forma, função, aparência e processos alternativos de produção, bem como a modelação de superfícies em ambientes virtuais.</p></div>
+<div class="module-list">
+<article class="curr-module" id="12-a2"><div class="curr-number">MÓDULO<br>A2</div><div><h3 class="curr-title">Prototipagem</h3><p class="curr-focus">Análise da forma e das especificações do produto, integração no conjunto e requisitos ergonómicos e estéticos; função, funcionalidades, tolerâncias e análise de elementos finitos; aparência e acabamentos; cadeias alternativas como moldes de silicone, resinas, modelações cerâmicas, moldes de areia e projeção metálica.</p><div class="curr-topics"><span>Forma e função</span><span>Ergonomia</span><span>Tolerâncias</span><span>Acabamentos</span><span>Processos alternativos</span></div></div><div class="curr-time"><b>36 HORAS</b><small>1.º PERÍODO<br>48 TEMPOS</small></div></article>
+<article class="curr-module" id="12-a4"><div class="curr-number">MÓDULO<br>A4</div><div><h3 class="curr-title">Ambientes Virtuais</h3><p class="curr-focus">Familiarização com a interface e o espaço de trabalho, importação e conversão de geometria, tipos e constituintes de superfícies, transformações e modificações, métodos de criação de geometria (surfacing e morphing) e modelação com NURBS em 2D e 3D.</p><div class="curr-topics"><span>Ambiente de trabalho</span><span>Importação</span><span>Superfícies</span><span>NURBS</span></div></div><div class="curr-time"><b>30 HORAS</b><small>1.º E 2.º PERÍODOS<br>40 TEMPOS</small></div></article>
+</div>
+<div class="learn-note"><b>Enfoque do 12.º ano:</b> testar criticamente protótipos, avaliar o seu desempenho, distinguir protótipos de maquetas e compreender como forma, função, aparência e processos de produção condicionam o produto final.</div>
+</section>
+
+<section class="assessment" id="avaliacao">
+<div class="year-kicker">AVALIAÇÃO / CRITÉRIOS COMUNS</div><h2>Aprender, experimentar<br>e comunicar.</h2><p>As planificações anuais dos três anos apresentam a mesma distribuição dos instrumentos de avaliação:</p>
+<div class="assessment-grid">
+<div class="assessment-card"><b>20%</b><span>Desempenho individual</span></div>
+<div class="assessment-card"><b>15%</b><span>Apropriação e reflexão</span></div>
+<div class="assessment-card"><b>25%</b><span>Interpretação e comunicação</span></div>
+<div class="assessment-card"><b>40%</b><span>Experimentação e criação</span></div>
+</div>
+<p style="margin-top:24px">As situações de aprendizagem previstas incluem demonstração pelo professor, com exemplos concretos e ilustrativos, e propostas de trabalhos práticos que permitam aplicar os temas lecionados.</p>
+</section>
+<section class="learn-footer"><p><b>Nota curricular</b><br>Esta página organiza os temas, objetivos e calendarização constantes das planificações anuais de DAC para 2026/2027. Os materiais de aula, exercícios, guiões e recursos digitais serão acrescentados progressivamente a cada módulo.</p><a class="button button-dark" href="../index.html">Voltar ao 3D Lab <span>↗</span></a></section>
+</main>
+<footer class="site-footer"><a class="brand footer-brand" href="../index.html"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-name">3D<span>LAB</span><small>LABORATÓRIO DIGITAL 3D</small></span></a><p>Uma plataforma de aprendizagem, experimentação e criação.</p><div class="footer-bottom"><span>© 2026 · 3D LAB — LABORATÓRIO DIGITAL 3D</span><a href="#topo">VOLTAR AO TOPO ↑</a></div></footer>
+<script>
+const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".main-nav");
+if(toggle&&nav){toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.textContent=open?"×":"☰"});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰"}))}
+</script>
+</body>
+</html>
