@@ -6,3 +6,6 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
 body:has(main.section li) main.section li{padding:18px 8px;border-bottom:1px solid #d9ddd6;list-style:none;font-weight:700;font-size:14px}body:has(main.section li) main.section ul{padding:0;margin-top:0}
+
+/* Realce visual da vista selecionada no Módulo 01 */
+.projection.active{border-color:var(--orange);box-shadow:inset 0 0 0 1px var(--orange);background:#fff;}
